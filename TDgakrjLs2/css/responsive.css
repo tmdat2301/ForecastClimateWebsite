@@ -1,0 +1,66 @@
+/* Css Responsive */
+@media all and (min-width: 1601px) and (max-width: 1920px) {
+}
+
+@media all and (min-width: 1201px) and (max-width: 1600px) {
+}
+
+@media all and (min-width: 961px) and (max-width: 1200px) {
+}
+
+@media all and (min-width: 641px) and (max-width: 960px) {
+	.uk-navbar-nav {justify-content: center}
+}
+
+@media all and (min-width: 176px) and (max-width: 640px) {
+	.img-weather-location {width: 100%; height: auto}
+	.img-weather-location img {width: 100%}
+	.ten-day-weather .text-weather-location {padding: 0 20px 50px 20px}
+    .item-days-wt{width:100px;min-height:auto;}
+	.ct-ft {text-align: center}
+	.bot-hd .uk-navbar-nav {display: inline-block}
+	.bot-hd .uk-navbar-nav>li {border-bottom: solid 1px #e9e9e9}
+	.bot-hd .uk-navbar-nav>li:last-child {border-bottom: none}
+	.bot-hd .uk-navbar-nav>li:first-child>a {padding-left: 15px}
+	.bot-hd .uk-navbar-nav>li>a {padding: 5px 20px 0 !important}
+	.bot-hd .uk-navbar-nav>li>a .uk-icon {position: absolute; right: 20px}
+	.bot-hd .uk-navbar-nav li a {justify-content: flex-start}
+	.bot-hd .uk-navbar-dropdown {position: relative; background: transparent; box-shadow: none; padding-top: 0 !important; width: 100%}
+	.bot-hd .uk-navbar-dropdown-nav>li>a {width: 100%}
+	.bot-hd .uk-navbar-dropdown-nav>li .uk-navbar-dropdown {display: block; left: 0 !important; padding: 10px 20px 5px !important}
+	.fix-img-weather-location, .img-weather-location img {width: 100%}
+	.logo-ft {display: block; text-align: center}
+	.top-ft ul li a {line-height: 30px}
+	/* Update 25/01/2019 */
+	.block-search {position: inherit; width: 100%; top: 0; margin-bottom: 10px}
+	.ct-news-nb-block {padding-left: 0}
+	.list-news li {position: relative}
+	.list-news li .thumb-news-nb {display: none !important}
+	.banner-hd a:before, .banner-hd a:after {width: 35px}
+	/* */
+}
+
+@media all and (min-width: 176px) and (max-width: 374px) {
+}
+
+/* Phần tử chung */
+
+@media all and (min-width: 176px) and (max-width: 1920px) {	
+}
+
+@media all and (min-width: 176px) and (max-width: 1600px) {
+}
+
+@media all and (min-width: 176px) and (max-width: 1200px) {
+}
+
+@media all and (min-width: 176px) and (max-width: 960px) {
+	.block-1 {width: 100%}
+	.list-weather {max-height: none}
+	.uk-navbar {position: inherit; height: 100%}
+	.uk-navbar:hover .uk-navbar-left {display: block}
+	.uk-navbar-left {position: absolute; left: 0; top: 100%; width: 100%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); z-index: 2; display: none}
+	.uk-navbar-nav {width: 100%}
+	.bot-hd .uk-navbar-nav>li>a {color: #333; font-size: 14px; min-height: 35px; position: relative}
+	.counter {padding-top: 0}
+}

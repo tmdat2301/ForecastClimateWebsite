@@ -1,0 +1,761 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <title>
+    Trung tâm Dự báo KTTV quốc gia
+  </title>
+  <meta name="description"
+    content="Web site nchmf.gov.vn -  web site thông tin  dự báo thời tiết biển, đất liền 24h,48h,72h, sản phẩm mô hình, ảnh Radar, ảnh vệ tinh." />
+  <meta name="keywords"
+    content="dự báo thời tiết biển,đất liền,24h,48h,72h, sản phẩm mô hình, ảnh radar, ảnh vệ tinh, GSM,ETA,HRM,GFS,GEM,bản tin thủy văn, hạn ngắn,hạn vừa,hạn dài,thông báo lũ." />
+  <meta name="author" content="kttv.gov.vn" />
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport" />
+  <meta property="og:site_name" content="Trung tâm Dự báo KTTV quốc gia" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nchmf.gov.vn" />
+  <meta property="og:title" content="Trung tâm Dự báo KTTV quốc gia" />
+  <!--Bật Responsive-->
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+  <script type="text/javascript" src="kttvSite/js/jquery.min.js"></script>
+  <script type="text/javascript" src="kttvSite/js/uikit.min.js"></script>
+  <script type="text/javascript" src="kttvSite/js/uikit-icons.min.js"></script>
+  <script type="text/javascript" src="kttvSite/js/Paging.js"></script>
+
+  <script type="text/javascript" src="Kttvsite//data/exporting.js"></script>
+
+  <script type="text/javascript" src="Kttvsite//js/jquery.galleryview/jquery.timers-1.2.js"></script>
+  <script type="text/javascript" src="Kttvsite//js/jquery.galleryview/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="Kttvsite/js/jquery-ui.js"></script>
+  <script type="text/javascript" src="Kttvsite/js/jquery.maskedinput.min.js"></script>
+
+  <script type="text/javascript" src="Kttvsite//js/jquery.galleryview/jquery.galleryview-3.0-dev.js"></script>
+
+  <script type="text/javascript">
+    var urlsite = 'kttvSite';
+    var site = 'kttvSite';
+
+    $(document).ready(function () {
+      SaveLog();
+
+
+    });
+
+  </script>
+  <script src="Kttvsite//data/leaflet.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179953088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179953088-1');
+  </script>
+
+
+  <script src="kttvSite/js/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+  <form method="post" action="./index.html?cul=vi-VN&amp;tabid=1&amp;title=ha-noi&amp;id=28&amp;" id="form1">
+    <div class="aspNetHidden">
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+        value="5Fi6m9sJZGTBl4M/9ckTjVjz/pgQG1BqWzY7AWTgcRYSqzldb1OEKmryXxN451AD/1e8WWIS5rQ9EWWtxSR3Ygwu+wrBBFdwZLtIEhotjuc=" />
+    </div>
+
+    <div class="aspNetHidden">
+
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DBA39670" />
+    </div>
+
+    <header id="header" class="uk-box-shadow-small">
+
+      <section class="top-hd">
+
+        <div class="uk-container uk-position-relative">
+          <h1 class="banner-hd uk-margin-remove-bottom">
+            <a class="uk-visible@m" href="Kttvsite/vi-VN/1/index.html">
+              <img src="Kttvsite//images/banner-hd-vi.jpg"></a>
+            <a class="uk-hidden@m" href="Kttvsite/vi-VN/1/index.html">
+              <img src="Kttvsite//images/banner-mb-vi.jpg"></a>
+          </h1>
+          <div class="top-hd-control uk-position-absolute">
+            <div class="uk-flex">
+              <div class="block-search uk-inline">
+                <button class="btn-search" type="button" onclick="Search(txtSearch.value);"><span
+                    uk-icon="icon: search"></span></button>
+                <div uk-dropdown="mode: click; pos: left-center" class="uk-padding-remove">
+                  <input id="txtSearch" type="text" class="block-input-search uk-input uk-form-small" value="Tìm kiếm"
+                    onblur="if (this.value=='') { this.value='Tìm kiếm'; }" name="txtSearch"
+                    onfocus="if (this.value=='Tìm kiếm') { this.value=''; }"
+                    onkeypress="return clickButton(event,'btnSearch')" />
+                </div>
+              </div>
+              <div class="lang-hd">
+                <a href="Kttvsite/vi-VN/1/index.html"><img src="Kttvsite//images/vi.jpg"></a>
+                <a style="width: 33px;height: 22px;" href="KttvsiteE/en-US/2/index.html"><img
+                    src="Kttvsite//images/en.jpg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bot-hd">
+        <div class="uk-container">
+          <nav uk-navbar="">
+
+            <span class="icon-nav-mobile uk-flex uk-flex-middle uk-hidden@m" uk-icon="icon: menu; ratio: 1.5"></span>
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                <li><a href="Kttvsite/vi-VN/1/gioi-thieu-26-15.html">Giới thiệu<span
+                      uk-icon="icon: triangle-down"></span></a>
+                  <div class="uk-navbar-dropdown uk-margin-remove-top">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a
+                          href="Kttvsite/vi-VN/1/gioi-thieu-trung-tam-du-bao-khi-tuong-thuy-van-quoc-gia-post20888.html">Chức
+                          năng nhiệm vụ</a>
+                      <li><a
+                          href="Kttvsite/vi-VN/1/so-do-to-chuc-trung-tam-du-bao-khi-tuong-thuy-van-quoc-gia-post21541.html">Sơ
+                          đồ tổ chức</a>
+                      <li><a href="Kttvsite/vi-VN/1/tin-tuc-su-kien-2022-15.html">Tin tức & Sự
+                          kiện </a>
+                      <li><a href="Kttvsite/vi-VN/1/van-ban-phap-luat-2068-15.html">Văn bản Pháp
+                          luật</a>
+                      <li><a href="Kttvsite/vi-VN/1/thong-bao-thanh-ly-tai-san-post26871.html">Tin
+                          tuyển dụng</a>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="Kttvsite/vi-VN/1/thoi-tiet-1-15.html">Thời tiết<span
+                      uk-icon="icon: triangle-down"></span></a>
+                  <div class="uk-navbar-dropdown uk-margin-remove-top">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="thoi-tiet-dat-lien-24h-12h2-15.html">Thời
+                          tiết
+                          đất liền 24h</a>
+                      <li><a href="Kttvsite/vi-VN/1/thoi-tiet-bien-24h-s12h3-15.html">Thời tiết
+                          biển 24h</a>
+                      <li><a href="Kttvsite/vi-VN/1/thoi-tiet-nguy-hiem-5-15.html">Thời tiết nguy
+                          hiểm<span uk-icon="icon: triangle-down"></span></a>
+                        <div class="uk-navbar-dropdown uk-margin-remove-top">
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="Kttvsite/vi-VN/1/bao-ap-thap-nhiet-doi-2049-15.html">Bão
+                                - Áp thấp nhiệt đới</a>
+                            <li><a href="Kttvsite/vi-VN/1/mua-lon-mua-lon-dien-rong-2053-15.html">Mưa
+                                lớn, mưa lớn diện rộng</a>
+                            <li><a href="Kttvsite/vi-VN/1/khong-khi-lanh-2050-15.html">Không
+                                khí lạnh</a>
+                            <li><a href="Kttvsite/vi-VN/1/nang-nong-2051-15.html">Nắng
+                                nóng</a>
+                            <li><a href="Kttvsite/vi-VN/1/dong-to-loc-voi-rong-2052-15.html">Dông,
+                                tố, lốc , vòi rồng</a>
+                            <li><a href="Kttvsite/vi-VN/1/hien-tuong-nguy-hiem-khac-2066-15.html">Hiện
+                                tượng nguy hiểm khác</a>
+                          </ul>
+                        </div>
+                      <li><a href="Kttvsite/vi-VN/1/thoi-tiet-10-ngay-toi-4-15.html">Thời tiết 10
+                          ngày tới</a>
+                      <li><a href="Kttvsite/vi-VN/1/thoi-tiet-chuyen-de-6-15.html">Thời tiết
+                          chuyên đề</a>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+
+    </header>
+    <div id="wrapper">
+      <div class="uk-container uk-position-relative">
+
+        <div class="uk-container">
+          <section class="row-wrp">
+            <div uk-grid="">
+              <div class="uk-width-expand@m uk-width-1-1@s">
+
+                <article class="block-2">
+                  <div class="main-wrp uk-box-shadow-small">
+
+
+                    <ul class="uk-breadcrumb">
+                      <li><a href="#"><span uk-icon="icon: folder"></span>Thời tiết</a></li>
+                      <li><span>Thời tiết 10 ngày tới</span></li>
+                    </ul>
+                    <h1 class="tt-news">Thời tiết Hà Nội</h1>
+
+
+
+                    <div class="grp-list-item">
+                      <div class="content-news fix-content-news">
+                        <div class="row-block">
+                          <div uk-grid="">
+
+                            <div class="uk-width-auto@s">
+                              <div class="icon-list-item uk-flex">
+                                <img src="Upload/WeatherSymbol/icon_resized/2001.png">
+                              </div>
+                            </div>
+                            <div class="uk-width-expand@s">
+                              <div class="text-weather-location fix-weather-location">
+
+
+                                <a href="#">Thời tiết hiện tại</a>
+                                <div class="time-update"><span uk-icon="icon: clock; ratio: 0.7"></span>Cập
+                                  nhật: 10h 25/05/2022</div>
+                                <ul class="list-info-wt uk-list">
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Nhiệt độ</div>
+                                      <div class="uk-width-3-4">: 26°C</div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Thời tiết</div>
+                                      <div class="uk-width-3-4">: Nhiều mây, không
+                                        mưa</div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Độ ẩm</div>
+                                      <div class="uk-width-3-4">: 91</div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Hướng gió</div>
+                                      <div class="uk-width-3-4">: Gió tây - tốc
+                                        độ: 1 m/s</div>
+                                    </div>
+                                  </li>
+                                </ul>
+
+
+
+
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@s">
+                              <div class="icon-list-item uk-flex">
+                                <img src="upload/WeatherSymbol/icon_resized/2001.png">
+                              </div>
+                            </div>
+                            <div class="uk-width-expand@s">
+                              <div class="text-weather-location fix-weather-location">
+
+
+                                <a href="#">Dự báo ngày hôm nay</a>
+                                <div class="time-update"><span uk-icon="icon: clock; ratio: 0.7"></span>Cập
+                                  nhật: 04h30 25/05/2022</div>
+                                <ul class="list-info-wt uk-list">
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Nhiệt độ</div>
+                                      <div class="uk-width-3-4">: 31°C</div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Độ ẩm</div>
+                                      <div class="uk-width-3-4">: 68</div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Hướng gió</div>
+                                      <div class="uk-width-3-4">: <img src="Upload/WeatherSymbol/icon_resized/SE.jpg">
+                                        tốc độ: 3m/s</div>
+                                    </div>
+                                  </li>
+                                </ul>
+
+
+
+
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@s">
+                              <div class="icon-list-item uk-flex">
+                                <img src="upload/WeatherSymbol/icon_resized/4601.png">
+                              </div>
+                            </div>
+                            <div class="uk-width-expand@s">
+                              <div class="text-weather-location fix-weather-location">
+
+
+                                <a href="#">Dự báo đêm hôm nay</a>
+                                <div class="time-update"><span uk-icon="icon: clock; ratio: 0.7"></span>Cập
+                                  nhật: 04h30 25/05/2022</div>
+                                <ul class="list-info-wt uk-list">
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Nhiệt độ</div>
+                                      <div class="uk-width-3-4">: 25°C</div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Độ ẩm</div>
+                                      <div class="uk-width-3-4">: 96</div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div uk-grid="">
+                                      <div class="uk-width-1-4">Hướng gió</div>
+                                      <div class="uk-width-3-4">: <img src="Upload/WeatherSymbol/icon_resized/SE.jpg">
+                                        tốc độ: 2m/s</div>
+                                    </div>
+                              </div>
+                              </li>
+                              </ul>
+
+
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row-block main-row-block">
+
+                        <h2>Dự báo thời tiết 10 ngày tới</h2>
+
+
+                        <div class="ten-days-weather">
+                          <div uk-grid="" class="slider">
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ năm <span>26/05/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/4301.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">31°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">25°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;82°%</span></div>
+                                <div class="temp-days-wt"><img style="width:20px;"
+                                    src="Upload/WeatherSymbol/icon_resized/N.jpg"><span class="small-temp">1m/s</span>
+                                </div>
+                                <div class="text-temp">Nhiều mây, có mưa, mưa rào</div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ sáu <span>27/05/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/4401.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">29°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">25°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;84°%</span></div>
+                                <div class="temp-days-wt"><img style="width:20px;"
+                                    src="Upload/WeatherSymbol/icon_resized/N.jpg"><span class="small-temp">1m/s</span>
+                                </div>
+                                <div class="text-temp">Nhiều mây, có mưa vừa</div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ bảy <span>28/05/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2001.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">31°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">25°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;67°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, không mưa</div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Chủ nhật <span>29/05/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2001.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">32°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">25°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;45°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, không mưa</div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ hai <span>30/05/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2001.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">31°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">26°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;75°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, không mưa</div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ ba <span>31/05/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2301.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">32°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">25°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;88°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, có mưa rào </div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ tư <span>01/06/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2301.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">32°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">26°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;67°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, có mưa rào </div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ năm <span>02/06/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2001.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">33°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">26°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;29°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, không mưa</div>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-5@s uk-width-1-2">
+                              <div class="item-days-wt">
+                                <div class="date-wt">Thứ sáu <span>03/06/2022</span>
+                                </div>
+                                <div class="icon-days-wt"><img src="Upload/WeatherSymbol/icon_resized/2001.png">
+                                </div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Hi.png"><span
+                                    class="large-temp">33°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/temperature_Lo.png"><span
+                                    class="small-temp">27°C</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/probabilityofrain.png"><span
+                                    class="small-temp">&nbsp;29°%</span></div>
+                                <div class="temp-days-wt"><img src="Kttvsite//images/bullet-white-icon.png"><span
+                                    class="small-temp"></span></div>
+                                <div class="text-temp">Có mây, không mưa</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+
+
+
+
+                      <script src="modules/exporting.js"></script>
+
+
+
+
+
+                    </div>
+                  </div>
+
+
+              </div>
+              </article>
+
+            </div>
+
+        </div>
+        <div id="end-sidebar"></div>
+        </section>
+
+
+      </div>
+
+    </div>
+    </div>
+    <footer id="footer">
+
+      <section class="top-ft">
+
+        <div class="uk-container uk-position-relative">
+          <ul style="line-height: 40px;">
+
+
+            <li style="text-align: center; width: 100%"><a href="#"></a></li>
+          </ul>
+          <a class="to-top" href="#"><span uk-icon="icon: push"></span>To top</a>
+        </div>
+      </section>
+      <section class="mid-ft">
+        <div class="uk-container">
+          <div uk-grid="">
+            <div class="uk-width-expand@m uk-width-1-1@s">
+              <div uk-grid="">
+                <div class="uk-width-auto@s">
+                  <a class="logo-ft" href="Kttvsite/">
+                    <img src="Kttvsite//images/logo-ft-vi.png"></a>
+                </div>
+                <div class="uk-width-expand@s">
+
+
+                  <div class="info-ft">
+                    <b>Copyright by Trung tâm Dự báo khí tượng thuỷ văn quốc
+                      gia</b><br />
+                    Địa chỉ: Tầng 12, Số 8 Pháo Đài Láng, Phường Láng Thượng, Quận Đống
+                    Đa, TP. Hà Nội.
+                    <br />
+                    Điện thoại: 84-24-38244916; 84-24-32673199 - số máy lẻ 701
+                    <br />
+                    E-mail: vtttkttv@monre.gov.vn
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="bot-ft">
+        <div class="uk-container">
+          <div uk-grid="">
+            <div class="uk-width-1-3@m box-ft">
+
+              <h3>Góp ý</h3>
+
+
+              <div class="row-box-ft">
+                <input type="text" class="uk-input uk-form-small" id="txtHoVaTen" value="Họ và tên"
+                  onblur="if (this.value=='') { this.value='Họ và tên'; }"
+                  onfocus="if(this.value=='Họ và tên') { this.value=''; }" />
+
+              </div>
+              <div class="row-box-ft">
+                <input type="text" class="uk-input uk-form-small" id="txtEmailCuaBan" value="Email"
+                  onblur="if (this.value=='') { this.value='Email'; }"
+                  onfocus="if(this.value=='Email') { this.value=''; }" />
+
+              </div>
+              <div class="row-box-ft">
+                <textarea id="txtContent" class="uk-textarea uk-form-small" rows="5"
+                  onkeypress='return maxLength(this,"3000");'
+                  onblur="if (this.value=='') { this.value='Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)'; }"
+                  onfocus="if(this.value=='Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)') { this.value=''; }"></textarea>
+              </div>
+              <div class="row-box-ft">
+                <button class="btn-send-form" type="button" onclick="KTTVSend();">
+
+
+                  Gửi góp ý
+
+                </button>
+              </div>
+            </div>
+            <div class="uk-width-1-3@m box-ft">
+
+              <h3>Thư viện ảnh</h3>
+
+
+              <div class="box-glr uk-position-relative uk-visible-toggle uk-light" uk-slider="">
+                <ul class="uk-slider-items uk-child-width-1-1">
+                  <li>
+                    <img src="Kttvsite//images/demo-img3.jpg">
+                    <span>Ảnh phong cảnh</span>
+                  </li>
+                  <li>
+                    <img src="Kttvsite//images/demo-img4.jpg">
+                    <span>Ảnh phong cảnh</span>
+                  </li>
+                  <li>
+                    <img src="Kttvsite//images/demo-img5.jpg">
+                    <span>Ảnh phong cảnh</span>
+                  </li>
+                  <li>
+                    <img src="Kttvsite//images/demo-img6.jpg">
+                    <span>Ảnh phong cảnh</span>
+                  </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                  uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                  uk-slider-item="next"></a>
+              </div>
+            </div>
+            <div class="uk-width-1-3@m box-ft">
+
+              <h3>Liên hệ</h3>
+              <div class="row-box-ft">
+                <a class="text-box-ft" href="Kttvsite/vi-VN/1/homerss.html"><span
+                    uk-icon="icon: rss; ratio: 0.8"></span>RSS</a>
+              </div>
+
+
+
+              <div class="row-box-ft">
+                <div class="list-social">
+                  <a class="icon-social icon-fb" href="https://www.facebook.com/NCHMF" target="_blank"><span
+                      uk-icon="icon: facebook;"></span></a>
+                  <a class="icon-social icon-tw" href="#"><span uk-icon="icon: twitter;"></span></a>
+                  <a class="icon-social icon-g" href="#"><span uk-icon="icon: google-plus;"></span></a>
+                  <a class="icon-social icon-y"
+                    href="https://www.youtube.com/channel/UCDEBv7ekT67fGoGjHrCJitA/videos?disable_polymer=1"
+                    target="_blank"><span uk-icon="icon: youtube;"></span></a>
+
+                </div>
+              </div>
+
+              <div class="row-box-ft">
+                <div class="list-social">
+                  <a class="text-box-ft" href="Kttvsite/vi-VN/1/RegisNews.html">
+                    <h3>Đăng ký nhận tin</h3>
+                  </a><a class="text-box-ft" target="_blank" href="http://nchmf.gov.vn/diendan/Default.aspx">
+                    <h3>Diễn đàn</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script type="text/javascript">
+        function maxLength(field, maxChars) {
+          if (field.value.length >= maxChars) {
+            event.returnValue = false;
+            return false;
+          }
+        }
+        var objSearch = $('#txtContent');
+        var start_word = 'Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)';
+        function onSearchBlur() {
+          if (objSearch.val() == '') objSearch.val(start_word);
+        }
+        function onSearchFocus() {
+          if (objSearch.val() == start_word) objSearch.val("");
+        }
+        function KTTVSend() {
+          var txtContent = $('#txtContent').val();
+          var txtEmail = $('#txtEmailCuaBan').val();
+          var txtName = $('#txtHoVaTen').val();
+          var reg1 = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          var testmail = reg1.test(txtEmail);
+          var _check = true;
+          if (txtName.length < 2 || txtName == 'Họ và tên') {
+            alert('Bạn chưa nhập Họ và tên!');
+            $("#txtHoVaTen").focus();
+            _check = false; return;
+          }
+          if (txtEmail.length < 2 || txtEmail == 'Email') {
+            alert('Bạn chưa nhập Email!');
+            $("#txtEmailCuaBan").focus();
+            _check = false; return;
+          }
+          if (!testmail) {
+            alert('Email sai định dạng!');
+            $("#txtEmailCuaBan").focus(); _check = false; return;
+          }
+
+          if (txtContent.length < 3 || txtContent == 'Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)') {
+            alert('Bạn phải nhập nội dung');
+            _check = false; return;
+          }
+          if (_check) {
+            SendComment($('#txtEmailCuaBan').val(), $('#txtHoVaTen').val(), $('#txtContent').val(), 1);
+            KTTVreset();
+          }
+        }
+        function KTTVreset() {
+          $("#txtContent").val("Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)");
+          $("#txtEmailCuaBan").val("Email");
+          $("#txtHoVaTen").val("Họ và tên");
+        }
+
+
+
+      </script>
+
+    </footer>
+  </form>
+</body>
+
+</html>

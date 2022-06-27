@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>
+        Trung tâm Dự báo KTTV quốc gia
+    </title>
+
+    <meta name="author" content="kttv.gov.vn" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport" />
+    <meta property="og:site_name" content="Trung tâm Dự báo KTTV quốc gia" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nchmf.gov.vn" />
+    <meta property="og:title" content="Trung tâm Dự báo KTTV quốc gia" />
+    <!--Bật Responsive-->
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.galleryview-3.0-dev.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+
+    <script type="text/javascript" src="kttvSite/js/jquery.min.js"></script>
+    <script type="text/javascript" src="kttvSite/js/uikit.min.js"></script>
+    <script type="text/javascript" src="kttvSite/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="kttvSite/js/Paging.js"></script>
+
+    <script type="text/javascript" src="Kttvsite//data/highcharts.js"></script>
+    <script type="text/javascript" src="Kttvsite//data/exporting.js"></script>
+
+    <!-- Second, add the Timer and Easing plugins -->
+    <script type="text/javascript" src="Kttvsite//js/jquery.galleryview/jquery.timers-1.2.js"></script>
+    <script type="text/javascript" src="Kttvsite//js/jquery.galleryview/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="Kttvsite/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="Kttvsite/js/jquery.maskedinput.min.js"></script>
+
+    <!-- Third, add the GalleryView Javascript and CSS files -->
+    <script type="text/javascript" src="Kttvsite//js/jquery.galleryview/jquery.galleryview-3.0-dev.js"></script>
+
+    <script type="text/javascript">
+        var urlsite = 'kttvSite';
+        var site = 'kttvSite';
+
+        $(document).ready(function () {
+            SaveLog();
+
+
+        });
+
+    </script>
+    <link rel="stylesheet" href="Kttvsite//css/leaflet.css" />
+    <script src="Kttvsite//data/leaflet.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179953088-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179953088-1');
+    </script>
+
+
+    <script src="kttvSite/js/modernizr-2.6.2.js"></script>
+
+    <script type="text/javascript" src="Kttvsite/js/Paging.js"></script>
+</head>
+
+<body>
+    <form method="post"
+        action="./thoi-tiet-dat-lien-24h-12h2-15.html?cul=vi-VN&amp;tabid=1&amp;cattitle=thoi-tiet-dat-lien-24h&amp;catid=2&amp;type=15"
+        id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9490CD24" />
+        </div>
+
+        <header id="header" class="uk-box-shadow-small">
+
+            <section class="top-hd">
+
+                <div class="uk-container uk-position-relative">
+                    <h1 class="banner-hd uk-margin-remove-bottom">
+                        <a class="uk-visible@m" href="index.html">
+                            <img src="Kttvsite//images/banner-hd-vi.jpg"></a>
+                        <a class="uk-hidden@m" href="Kttvsite/vi-VN/1/index.html">
+                            <img src="Kttvsite//images/banner-mb-vi.jpg"></a>
+                    </h1>
+                    <div class="top-hd-control uk-position-absolute">
+                        <div class="uk-flex">
+                            <div class="block-search uk-inline">
+                                <button class="btn-search" type="button" onclick="Search(txtSearch.value);"><span
+                                        uk-icon="icon: search"></span></button>
+                                <div uk-dropdown="mode: click; pos: left-center" class="uk-padding-remove">
+                                    <input id="txtSearch" type="text" class="block-input-search uk-input uk-form-small"
+                                        value="Tìm kiếm" onblur="if (this.value=='') { this.value='Tìm kiếm'; }"
+                                        name="txtSearch" onfocus="if (this.value=='Tìm kiếm') { this.value=''; }"
+                                        onkeypress="return clickButton(event,'btnSearch')" />
+                                </div>
+                            </div>
+                            <div class="lang-hd">
+                                <a href="Kttvsite/vi-VN/1/index.html"><img src="Kttvsite//images/vi.jpg"></a>
+                                <a style="width: 33px;height: 22px;" href="KttvsiteE/en-US/2/index.html"><img
+                                        src="Kttvsite//images/en.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bot-hd">
+                <div class="uk-container">
+                    <nav uk-navbar="">
+
+                        <span class="icon-nav-mobile uk-flex uk-flex-middle uk-hidden@m"
+                            uk-icon="icon: menu; ratio: 1.5"></span>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="Kttvsite/vi-VN/1/gioi-thieu-26-15.html">Giới thiệu<span
+                                            uk-icon="icon: triangle-down"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove-top">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a
+                                                    href="Kttvsite/vi-VN/1/gioi-thieu-trung-tam-du-bao-khi-tuong-thuy-van-quoc-gia-post20888.html">Chức
+                                                    năng nhiệm vụ</a>
+                                            <li><a
+                                                    href="Kttvsite/vi-VN/1/so-do-to-chuc-trung-tam-du-bao-khi-tuong-thuy-van-quoc-gia-post21541.html">Sơ
+                                                    đồ tổ chức</a>
+                                            <li><a href="Kttvsite/vi-VN/1/tin-tuc-su-kien-2022-15.html">Tin tức & Sự
+                                                    kiện </a>
+                                            <li><a href="Kttvsite/vi-VN/1/van-ban-phap-luat-2068-15.html">Văn bản Pháp
+                                                    luật</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thong-bao-thanh-ly-tai-san-post26871.html">Tin
+                                                    tuyển dụng</a>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="Kttvsite/vi-VN/1/thoi-tiet-1-15.html">Thời tiết<span
+                                            uk-icon="icon: triangle-down"></span></a>
+                                    <div class="uk-navbar-dropdown uk-margin-remove-top">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="thoi-tiet-dat-lien-24h-12h2-15.html">Thời tiết
+                                                    đất liền 24h</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-bien-24h-s12h3-15.html">Thời tiết
+                                                    biển 24h</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-nguy-hiem-5-15.html">Thời tiết nguy
+                                                    hiểm<span uk-icon="icon: triangle-down"></span></a>
+                                                <div class="uk-navbar-dropdown uk-margin-remove-top">
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                        <li><a
+                                                                href="Kttvsite/vi-VN/1/bao-ap-thap-nhiet-doi-2049-15.html">Bão
+                                                                - Áp thấp nhiệt đới</a>
+                                                        <li><a
+                                                                href="Kttvsite/vi-VN/1/mua-lon-mua-lon-dien-rong-2053-15.html">Mưa
+                                                                lớn, mưa lớn diện rộng</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/khong-khi-lanh-2050-15.html">Không
+                                                                khí lạnh</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/nang-nong-2051-15.html">Nắng
+                                                                nóng</a>
+                                                        <li><a
+                                                                href="Kttvsite/vi-VN/1/dong-to-loc-voi-rong-2052-15.html">Dông,
+                                                                tố, lốc , vòi rồng</a>
+                                                        <li><a
+                                                                href="Kttvsite/vi-VN/1/hien-tuong-nguy-hiem-khac-2066-15.html">Hiện
+                                                                tượng nguy hiểm khác</a>
+                                                    </ul>
+                                                </div>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-10-ngay-toi-4-15.html">Thời tiết 10
+                                                    ngày tới</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-chuyen-de-6-15.html">Thời tiết
+                                                    chuyên đề</a>
+                                        </ul>
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+
+
+        </header>
+        <div id="wrapper">
+            <div class="uk-container uk-position-relative">
+
+
+                <div class="menu-main uk-visible@m">
+                    <div class="menu-main-ct uk-box-shadow-small">
+                        <ul>
+                            <li><span class="icon-menu"><img
+                                        src="upload//Icons/admin/2019/8/15/15-08-2019-074747.png"></span>
+                                <div class="menu-main-drop uk-position-absolute uk-box-shadow-small"><a
+                                        href="Kttvsite/vi-VN/1/thoi-tiet-1-15.html">Thời tiết<span
+                                            uk-icon="icon:triangle-down"></span></a>
+                                    <div class="menu-main-sub-drop uk-box-shadow-small">
+                                        <ul>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-dat-lien-24h-12h2-15.html">Thời tiết
+                                                    đất liền 24h</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-bien-24h-s12h3-15.html">Thời tiết
+                                                    biển 24h</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-nguy-hiem-5-15.html">Thời tiết nguy
+                                                    hiểm<span uk-icon="icon:chevron-right"></span></a>
+                                                <div
+                                                    class="menu-main-sub-drop-2 uk-position-absolute uk-box-shadow-small">
+                                                    <ul>
+                                                        <li><a
+                                                                href="Kttvsite/vi-VN/1/bao-ap-thap-nhiet-doi-2049-15.html">Bão
+                                                                - Áp thấp nhiệt đới</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/khong-khi-lanh-2050-15.html">Không
+                                                                khí lạnh</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/nang-nong-2051-15.html">Nắng
+                                                                nóng</a>
+                                                        <li><a
+                                                                href="Kttvsite/vi-VN/1/dong-to-loc-voi-rong-2052-15.html">Dông,
+                                                                tố, lốc , vòi rồng</a>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-10-ngay-toi-4-15.html">Thời tiết 10
+                                                    ngày tới</a>
+                                            <li><a href="Kttvsite/vi-VN/1/thoi-tiet-chuyen-de-6-15.html">Thời tiết
+                                                    chuyên đề</a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span class="icon-menu"><img
+                                        src="upload//Icons/admin/2019/8/15/15-08-2019-074840.png"></span>
+                                <div class="menu-main-drop uk-position-absolute uk-box-shadow-small"><a
+                                        href="Kttvsite/vi-VN/1/khi-hau-7-15.html">Khí hậu<span
+                                            uk-icon="icon:triangle-down"></span></a>
+                                    <div class="menu-main-sub-drop uk-box-shadow-small">
+                                        <ul>
+                                            <li><a href="Kttvsite/vi-VN/1/du-bao-thang-8-15.html">Dự báo tháng</a>
+                                            <li><a href="Kttvsite/vi-VN/1/du-bao-mua-9-15.html">Dự báo mùa</a>
+                                            <li><a href="Kttvsite/vi-VN/1/du-bao-khi-hau-10-15.html">Dự báo khí hậu</a>
+                                            <li><a href="Kttvsite/vi-VN/1/du-bao-khac-11-15.html">Dự báo khác</a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span class="icon-menu"><img
+                                        src="upload//Icons/admin/2019/8/15/15-08-2019-075326.png"></span>
+                                <div class="menu-main-drop uk-position-absolute uk-box-shadow-small"><a
+                                        href="Kttvsite/vi-VN/1/thuy-van-12-18.html">Thủy văn<span
+                                            uk-icon="icon:triangle-down"></span></a>
+                                    <div class="menu-main-sub-drop uk-box-shadow-small">
+                                        <ul>
+                                            <li><a href="Kttvsite/vi-VN/1/thuy-van-nguy-hiem-15-18.html">Thủy văn nguy
+                                                    hiểm<span uk-icon="icon:chevron-right"></span></a>
+                                                <div
+                                                    class="menu-main-sub-drop-2 uk-position-absolute uk-box-shadow-small">
+                                                    <ul>
+                                                        <li><a href="Kttvsite/vi-VN/1/lu-ngap-lut-16-18.html">Lũ; Ngập
+                                                                lụt</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/lu-quet-17-18.html">Lũ quét</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/sat-lo-sut-lun-dat-da-18-18.html">Sạt
+                                                                lở , sụt lún đất đá</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/han-han-19-18.html">Hạn hán</a>
+                                                        <li><a href="Kttvsite/vi-VN/1/xam-nhap-man-20-18.html">Xâm nhập
+                                                                mặn</a>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="Kttvsite/vi-VN/1/nguon-nuoc-21-18.html">Nguồn nước</a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span class="icon-menu"><img
+                                        src="upload//Icons/admin/2019/8/15/15-08-2019-074925.png"></span>
+                                <div class="menu-main-drop uk-position-absolute uk-box-shadow-small"><a
+                                        href="Kttvsite/vi-VN/1/hai-van-22-15.html">Hải văn<span
+                                            uk-icon="icon:triangle-down"></span></a>
+                                    <div class="menu-main-sub-drop uk-box-shadow-small">
+                                        <ul>
+                                            <li><a href="Kttvsite/vi-VN/1/nuoc-dang-24-15.html">Nước dâng</a>
+                                            <li><a href="Kttvsite/vi-VN/1/song-25-15.html">Sóng</a>
+                                            <li><a href="Kttvsite/vi-VN/1/dong-chay-2065-15.html">Dòng chảy</a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="uk-container">
+                    <section class="row-wrp">
+                        <div uk-grid="">
+                            <div class="uk-width-expand@m uk-width-1-1@s">
+
+
+
+                                <article class="block-2">
+                                    <div class="main-wrp uk-box-shadow-small">
+                                        <ul class="uk-breadcrumb">
+                                            <li><a href="#"><span uk-icon="icon: folder"></span>Thời tiết</a></li>
+                                            <li><span>Thời tiết đất liền 24h</span></li>
+                                        </ul>
+                                        <h1 class="tt-news">Dự báo thời tiết - Đêm 2 và ngày 03/06/2022</h1>
+                                        <div class="grp-list-item">
+                                            <ul class="uk-list">
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/2501.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Hà Nội</a>
+                                                                <p>
+                                                                    Có mây, chiều tối và đêm có mưa rào và dông vài nơi;
+                                                                    ngày nắng nóng. Gió nam cấp 2-3. Trong mưa dông có
+                                                                    khả năng xảy ra lốc, sét, mưa đá và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 26-28 độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 34-36 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/2501.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Phía Tây Bắc Bộ</a>
+                                                                <p>
+                                                                    Có mây, chiều tối và đêm có mưa rào và dông rải rác,
+                                                                    cục bộ có mưa vừa, mưa to; ngày nắng, riêng Sơn
+                                                                    La-Hòa Bình có nắng nóng. Gió nhẹ. Trong mưa dông có
+                                                                    khả năng xảy ra lốc, sét, mưa đá và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 24-27 độ, có nơi dưới 23
+                                                                    độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 31-34 độ, riêng Sơn La-Hòa
+                                                                    Bình 34-36 độ, có nơi trên 36 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/2501.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Phía Đông Bắc Bộ</a>
+                                                                <p>
+                                                                    Có mây, chiều tối và đêm có mưa rào và dông vài nơi,
+                                                                    riêng vùng núi và trung du có mưa rào và dông rải
+                                                                    rác, cục bộ có mưa vừa, mưa to; ngày nắng, khu vực
+                                                                    đồng bằng và trung du có nắng nóng. Gió nam cấp 2-3.
+                                                                    Trong mưa dông có khả năng xảy ra lốc, sét, mưa đá
+                                                                    và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 25-28 độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 32-35 độ, khu vực đồng bằng
+                                                                    có nơi trên 36 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/1011.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Thanh Hóa - Thừa Thiên Huế</a>
+                                                                <p>
+                                                                    Có mây, chiều tối và đêm có mưa rào và dông vài nơi;
+                                                                    ngày nắng nóng, có nơi nắng nóng gay gắt. Gió tây
+                                                                    nam cấp 2-3. Trong mưa dông có khả năng xảy ra lốc,
+                                                                    sét, mưa đá và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 25-28 độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 34-37 độ, có nơi trên 38 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/2501.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Đà Nẵng đến Bình Thuận</a>
+                                                                <p>
+                                                                    Có mây, chiều tối và đêm có mưa rào và dông vài nơi;
+                                                                    ngày nắng, phía Bắc có nắng nóng, có nơi nắng nóng
+                                                                    gay gắt. Gió tây nam cấp 2-3. Trong mưa dông có khả
+                                                                    năng xảy ra lốc, sét, mưa đá và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 25-28 độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 32-35 độ, riêng phía Bắc
+                                                                    34-37 độ, có nơi trên 37 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/2501.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Tây Nguyên</a>
+                                                                <p>
+                                                                    Có mây, có mưa rào và dông vài nơi, riêng chiều tối
+                                                                    có mưa rào và dông rải rác, cục bộ có mưa vừa, mưa
+                                                                    to. Gió tây nam cấp 2-3. Trong mưa dông có khả năng
+                                                                    xảy ra lốc, sét, mưa đá và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 21-24 độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 30-33 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div uk-grid="">
+
+                                                        <div class="uk-width-auto">
+                                                            <div class="icon-list-item uk-flex">
+                                                                <img src="Upload/WeatherSymbol/icon_resized/2501.png ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="text-weather-location fix-weather-location">
+                                                                <a href="#">Nam Bộ</a>
+                                                                <p>
+                                                                    Có mây, có mưa rào và dông vài nơi, riêng chiều tối
+                                                                    có mưa rào và dông rải rác, cục bộ có mưa vừa, mưa
+                                                                    to. Gió tây nam cấp 2-3. Trong mưa dông có khả năng
+                                                                    xảy ra lốc, sét, mưa đá và gió giật mạnh.
+
+                                                                    <br />
+                                                                    Nhiệt độ thấp nhất từ : 24-27 độ.<br />
+                                                                    Nhiệt độ cao nhất từ : 31-34 độ.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+
+                            </div>
+                            <div class="uk-width-auto@m uk-width-1-1@s">
+
+                                <script type="text/javascript" src="Kttvsite/js/Paging.js"></script>
+                                <style>
+                                    .weather-forecast-list__day {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        min-width: 51px;
+                                        font-weight: 700;
+                                        line-height: 1;
+
+                                        text-align: center;
+                                        white-space: nowrap;
+                                        vertical-align: baseline;
+                                        border-radius: .25em;
+                                        padding-left: 110px;
+
+                                    }
+                                </style>
+                                <div class="uk-width-auto@m uk-width-1-1@s">
+                                    <aside class="block-1">
+
+
+
+
+                                        <article class="row-block">
+                                            <div class="main-row-block">
+
+                                                <h3>Thời tiết - Đêm 2 và ngày 03/06/2022</h3>
+
+                                                <div class="ct-row-block uk-box-shadow-small">
+                                                    <ul class="uk-list list-weather uk-margin-remove-bottom">
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/2501.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Hà
+                                                                        Nội</a><span class="text-weather-location">
+                                                                        Nhiệt độ thấp nhất : 26-28 độ.<br />Nhiệt độ cao
+                                                                        nhất : 34-36 độ. </span></div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, chiều tối và đêm có mưa
+                                                                rào và dông vài nơi; ngày nắng nóng. Gió nam cấp 2-3.
+                                                                Trong mưa dông có khả năng xảy ra lốc, sét, mưa đá và
+                                                                gió giật mạnh.</p>
+                                                        </li>
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/2501.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Phía
+                                                                        Tây Bắc Bộ</a><span
+                                                                        class="text-weather-location"> Nhiệt độ thấp
+                                                                        nhất : 24-27 độ, có nơi dưới 23 độ.<br />Nhiệt
+                                                                        độ cao nhất : 31-34 độ, riêng Sơn La-Hòa Bình
+                                                                        34-36 độ, có nơi trên 36 độ. </span></div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, chiều tối và đêm có mưa
+                                                                rào và dông rải rác, cục bộ có mưa vừa, mưa to; ngày
+                                                                nắng, riêng Sơn La-Hòa Bình có nắng nóng. Gió nhẹ. Trong
+                                                                mưa dông có khả năng xảy ra lốc, sét, mưa đá và gió giật
+                                                                mạnh.</p>
+                                                        </li>
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/2501.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Phía
+                                                                        Đông Bắc Bộ</a><span
+                                                                        class="text-weather-location"> Nhiệt độ thấp
+                                                                        nhất : 25-28 độ.<br />Nhiệt độ cao nhất : 32-35
+                                                                        độ, khu vực đồng bằng có nơi trên 36 độ. </span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, chiều tối và đêm có mưa
+                                                                rào và dông vài nơi, riêng vùng núi và trung du có mưa
+                                                                rào và dông rải rác, cục bộ có mưa vừa, mưa to; ngày
+                                                                nắng, khu vực đồng bằng và trung du có nắng nóng. Gió
+                                                                nam cấp 2-3. Trong mưa dông có khả năng xảy ra lốc, sét,
+                                                                mưa đá và gió giật mạnh.</p>
+                                                        </li>
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/1011.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Thanh
+                                                                        Hóa - Thừa Thiên Huế</a><span
+                                                                        class="text-weather-location"> Nhiệt độ thấp
+                                                                        nhất : 25-28 độ.<br />Nhiệt độ cao nhất : 34-37
+                                                                        độ, có nơi trên 38 độ. </span></div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, chiều tối và đêm có mưa
+                                                                rào và dông vài nơi; ngày nắng nóng, có nơi nắng nóng
+                                                                gay gắt. Gió tây nam cấp 2-3. Trong mưa dông có khả năng
+                                                                xảy ra lốc, sét, mưa đá và gió giật mạnh.</p>
+                                                        </li>
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/2501.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Đà Nẵng
+                                                                        đến Bình Thuận</a><span
+                                                                        class="text-weather-location"> Nhiệt độ thấp
+                                                                        nhất : 25-28 độ.<br />Nhiệt độ cao nhất : 32-35
+                                                                        độ, riêng phía Bắc 34-37 độ, có nơi trên 37 độ.
+                                                                    </span></div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, chiều tối và đêm có mưa
+                                                                rào và dông vài nơi; ngày nắng, phía Bắc có nắng nóng,
+                                                                có nơi nắng nóng gay gắt. Gió tây nam cấp 2-3. Trong mưa
+                                                                dông có khả năng xảy ra lốc, sét, mưa đá và gió giật
+                                                                mạnh.</p>
+                                                        </li>
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/2501.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Tây
+                                                                        Nguyên</a><span class="text-weather-location">
+                                                                        Nhiệt độ thấp nhất : 21-24 độ.<br />Nhiệt độ cao
+                                                                        nhất : 30-33 độ. </span></div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, có mưa rào và dông vài
+                                                                nơi, riêng chiều tối có mưa rào và dông rải rác, cục bộ
+                                                                có mưa vừa, mưa to. Gió tây nam cấp 2-3. Trong mưa dông
+                                                                có khả năng xảy ra lốc, sét, mưa đá và gió giật mạnh.
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <div uk-grid="">
+                                                                <div class="uk-width-1-3"><span class="icon-wt-3"><img
+                                                                            src="Upload/WeatherSymbol/icon_resized/2501.png"></span>
+                                                                </div>
+                                                                <div class="uk-width-2-3"><a class="tt-location">Nam
+                                                                        Bộ</a><span class="text-weather-location"> Nhiệt
+                                                                        độ thấp nhất : 24-27 độ.<br />Nhiệt độ cao nhất
+                                                                        : 31-34 độ. </span></div>
+                                                            </div>
+                                                            <p class="text-list-weather">Có mây, có mưa rào và dông vài
+                                                                nơi, riêng chiều tối có mưa rào và dông rải rác, cục bộ
+                                                                có mưa vừa, mưa to. Gió tây nam cấp 2-3. Trong mưa dông
+                                                                có khả năng xảy ra lốc, sét, mưa đá và gió giật mạnh.
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="row-block">
+
+
+                                            <ul class="menu-tab-weather uk-margin-remove-bottom uk-subnav uk-subnav-pill"
+                                                uk-switcher>
+                                                <li><a href="Kttvsite/vi-VN/1/image-ve-tinh-v1.html">vệ tinh</a></li>
+                                                <li><a href="Kttvsite/vi-VN/1/image-ra-dar-r2.html">UV</a></li>
+                                                <li><a href="Kttvsite/vi-VN/1/0/image-sp-mo-hinh-p3.html">mô hình</a>
+                                                </li>
+                                                <li><a href="Kttvsite/vi-VN/1/image-ban-do-mua-m4.html">Bản đồ mưa</a>
+                                                </li>
+                                            </ul>
+                                            <ul
+                                                class="ct-tab-weather uk-margin-remove uk-box-shadow-small uk-switcher uk-margin">
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-ve-tinh-v1.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/Settelite8.png"></a></li>
+                                                <li><a class="main-tab-weather radar-weather"
+                                                        href="Kttvsite/vi-VN/1/image-ra-dar-r2.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/RadaPL.jpg"></a></li>
+
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/0/image-sp-mo-hinh-p3.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/imageresize.jpg"></a></li>
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-ban-do-mua-m4.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/RainMap.png"></a></li>
+                                            </ul>
+
+                                        </article>
+
+
+                                        <article class="row-block">
+
+
+
+                                            <ul class="menu-tab-weather uk-margin-remove-bottom uk-subnav uk-subnav-pill"
+                                                uk-switcher>
+
+                                                <li><a href="#">Lũ quét-sạt lở đất</a></li>
+                                                <li><a href="#">Ngập lụt</a></li>
+
+                                            </ul>
+                                            <ul
+                                                class="ct-tab-weather uk-margin-remove uk-box-shadow-small uk-switcher uk-margin">
+
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-dong-chay-LandSlide1.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/Salodat.png"></a></li>
+                                                <li><a class="main-tab-weather" href="#">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/nuocdang.jpg"></a></li>
+
+
+                                            </ul>
+
+                                        </article>
+
+                                        <article class="row-block">
+
+
+
+                                            <ul class="menu-tab-weather uk-margin-remove-bottom uk-subnav uk-subnav-pill"
+                                                uk-switcher>
+                                                <li><a href="Kttvsite/vi-VN/1/image-song-bien-s1.html">Sóng biển</a>
+                                                </li>
+                                                <li><a href="Kttvsite/vi-VN/1/image-dong-chay-flow1.html">Dòng chảy</a>
+                                                </li>
+                                                <li><a href="Kttvsite/vi-VN/1/image-nuoc-dang-v2.html">Vật thể trôi</a>
+                                                </li>
+                                                <li><a href="Kttvsite/vi-VN/1/image-vat-the-troi-vt3.html">Nước dâng</a>
+                                                </li>
+                                            </ul>
+                                            <ul
+                                                class="ct-tab-weather uk-margin-remove uk-box-shadow-small uk-switcher uk-margin">
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-song-bien-s1.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/Wave.png"></a></li>
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-dong-chay-flow1.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/Currents.png"></a></li>
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-nuoc-dang-n2.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/Surge.png"></a></li>
+                                                <li><a class="main-tab-weather"
+                                                        href="Kttvsite/vi-VN/1/image-vat-the-troi-vt3.html">
+                                                        <img style="width: 320px; height: 220px"
+                                                            src="Kttvsite//images/vatthetroi.jpg"></a></li>
+
+                                            </ul>
+
+                                        </article>
+
+
+
+
+
+
+
+
+
+
+
+                                    </aside>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="end-sidebar"></div>
+                    </section>
+
+
+                </div>
+
+            </div>
+        </div>
+        <footer id="footer">
+
+            <section class="top-ft">
+
+                <div class="uk-container uk-position-relative">
+                    <ul style="line-height: 40px;">
+
+
+                        <li style="text-align: center; width: 100%"><a href="#"></a></li>
+                    </ul>
+                    <a class="to-top" href="#"><span uk-icon="icon: push"></span>To top</a>
+                </div>
+            </section>
+            <section class="mid-ft">
+                <div class="uk-container">
+                    <div uk-grid="">
+                        <div class="uk-width-expand@m uk-width-1-1@s">
+                            <div uk-grid="">
+                                <div class="uk-width-auto@s">
+                                    <a class="logo-ft" href="Kttvsite/">
+                                        <img src="Kttvsite//images/logo-ft-vi.png"></a>
+                                </div>
+                                <div class="uk-width-expand@s">
+
+
+                                    <div class="info-ft">
+                                        <b>© 2008 - 2019 Copyright by Trung tâm Dự báo khí tượng thuỷ văn quốc
+                                            gia</b><br />
+                                        Địa chỉ: Tầng 12, Số 8 Pháo Đài Láng, Phường Láng Thượng, Quận Đống
+                                        Đa, TP. Hà Nội.
+                                        <br />
+                                        Điện thoại: 84-24-38244916; 84-24-32673199 - số máy lẻ 701
+                                        <br />
+                                        E-mail: vtttkttv@monre.gov.vn
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="bot-ft">
+                <div class="uk-container">
+                    <div uk-grid="">
+                        <div class="uk-width-1-3@m box-ft">
+
+                            <h3>Góp ý</h3>
+
+
+                            <div class="row-box-ft">
+                                <input type="text" class="uk-input uk-form-small" id="txtHoVaTen" value="Họ và tên"
+                                    onblur="if (this.value=='') { this.value='Họ và tên'; }"
+                                    onfocus="if(this.value=='Họ và tên') { this.value=''; }" />
+
+                            </div>
+                            <div class="row-box-ft">
+                                <input type="text" class="uk-input uk-form-small" id="txtEmailCuaBan" value="Email"
+                                    onblur="if (this.value=='') { this.value='Email'; }"
+                                    onfocus="if(this.value=='Email') { this.value=''; }" />
+
+                            </div>
+                            <div class="row-box-ft">
+                                <textarea id="txtContent" class="uk-textarea uk-form-small" rows="5"
+                                    onkeypress='return maxLength(this,"3000");'
+                                    onblur="if (this.value=='') { this.value='Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)'; }"
+                                    onfocus="if(this.value=='Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)') { this.value=''; }"></textarea>
+                            </div>
+                            <div class="row-box-ft">
+                                <button class="btn-send-form" type="button" onclick="KTTVSend();">
+
+
+                                    Gửi góp ý
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@m box-ft">
+
+                            <h3>Thư viện ảnh</h3>
+
+
+                            <div class="box-glr uk-position-relative uk-visible-toggle uk-light" uk-slider="">
+                                <ul class="uk-slider-items uk-child-width-1-1">
+                                    <li>
+                                        <img src="Kttvsite//images/demo-img3.jpg">
+                                        <span>Ảnh phong cảnh</span>
+                                    </li>
+                                    <li>
+                                        <img src="Kttvsite//images/demo-img4.jpg">
+                                        <span>Ảnh phong cảnh</span>
+                                    </li>
+                                    <li>
+                                        <img src="Kttvsite//images/demo-img5.jpg">
+                                        <span>Ảnh phong cảnh</span>
+                                    </li>
+                                    <li>
+                                        <img src="Kttvsite//images/demo-img6.jpg">
+                                        <span>Ảnh phong cảnh</span>
+                                    </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                    uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                    uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@m box-ft">
+
+                            <h3>Liên hệ</h3>
+                            <div class="row-box-ft">
+                                <a class="text-box-ft" href="Kttvsite/vi-VN/1/homerss.html"><span
+                                        uk-icon="icon: rss; ratio: 0.8"></span>RSS</a>
+                            </div>
+
+
+
+                            <div class="row-box-ft">
+                                <div class="list-social">
+                                    <a class="icon-social icon-fb" href="https://www.facebook.com/NCHMF"
+                                        target="_blank"><span uk-icon="icon: facebook;"></span></a>
+                                    <a class="icon-social icon-tw" href="#"><span uk-icon="icon: twitter;"></span></a>
+                                    <a class="icon-social icon-g" href="#"><span
+                                            uk-icon="icon: google-plus;"></span></a>
+                                    <a class="icon-social icon-y"
+                                        href="channel/UCDEBv7ekT67fGoGjHrCJitA/videos?disable_polymer=1"
+                                        target="_blank"><span uk-icon="icon: youtube;"></span></a>
+
+                                </div>
+                            </div>
+
+                            <div class="row-box-ft">
+                                <div class="list-social">
+                                    <a class="text-box-ft" href="Kttvsite/vi-VN/1/RegisNews.html">
+                                        <h3>Đăng ký nhận tin</h3>
+                                    </a><a class="text-box-ft" target="_blank"
+                                        href="http://nchmf.gov.vn/diendan/Default.aspx">
+                                        <h3>Diễn đàn</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript">
+                function maxLength(field, maxChars) {
+                    if (field.value.length >= maxChars) {
+                        event.returnValue = false;
+                        return false;
+                    }
+                }
+                var objSearch = $('#txtContent');
+                var start_word = 'Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)';
+                function onSearchBlur() {
+                    if (objSearch.val() == '') objSearch.val(start_word);
+                }
+                function onSearchFocus() {
+                    if (objSearch.val() == start_word) objSearch.val("");
+                }
+                function KTTVSend() {
+                    var txtContent = $('#txtContent').val();
+                    var txtEmail = $('#txtEmailCuaBan').val();
+                    var txtName = $('#txtHoVaTen').val();
+                    var reg1 = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    var testmail = reg1.test(txtEmail);
+                    var _check = true;
+                    if (txtName.length < 2 || txtName == 'Họ và tên') {
+                        alert('Bạn chưa nhập Họ và tên!');
+                        $("#txtHoVaTen").focus();
+                        _check = false; return;
+                    }
+                    if (txtEmail.length < 2 || txtEmail == 'Email') {
+                        alert('Bạn chưa nhập Email!');
+                        $("#txtEmailCuaBan").focus();
+                        _check = false; return;
+                    }
+                    if (!testmail) {
+                        alert('Email sai định dạng!');
+                        $("#txtEmailCuaBan").focus(); _check = false; return;
+                    }
+
+                    if (txtContent.length < 3 || txtContent == 'Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)') {
+                        alert('Bạn phải nhập nội dung');
+                        _check = false; return;
+                    }
+                    if (_check) {
+                        SendComment($('#txtEmailCuaBan').val(), $('#txtHoVaTen').val(), $('#txtContent').val(), 1);
+                        KTTVreset();
+                    }
+                }
+                function KTTVreset() {
+                    $("#txtContent").val("Nội dung (Đề nghị Quý độc giả gõ tiếng việt có dấu)");
+                    $("#txtEmailCuaBan").val("Email");
+                    $("#txtHoVaTen").val("Họ và tên");
+                }
+
+
+
+            </script>
+
+        </footer>
+    </form>
+</body>
+
+</html>
